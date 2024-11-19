@@ -1,0 +1,23 @@
+# Selected features from Ensemble Filter only
+ensemble_selected_features = ['Follicle No. (L)', 'hair growth(Y/N)', 'Follicle No. (R)', 
+                              'Cycle(R/I)', 'Fast food (Y/N)', 'AMH(ng/mL)', 'Skin darkening (Y/N)', 
+                              'Weight gain(Y/N)', 'Pimples(Y/N)', 'Cycle length(days)', 
+                              'Hip(inch)', 'Weight (Kg)', 'FSH/LH', 'FSH(mIU/mL)']
+
+
+Selected Features without ensemble, only RL: 
+[' Age (yrs)', 'Weight (Kg)', 'Pulse rate(bpm) ', 'RR (breaths/min)', 'Hb(g/dl)', 'Cycle(R/I)', 'Cycle length(days)', 'Marraige Status (Yrs)', '  I   beta-HCG(mIU/mL)', 'FSH(mIU/mL)', 'Waist(inch)', 'Waist:Hip Ratio', 'TSH (mIU/L)', 'AMH(ng/mL)', 'Vit D3 (ng/mL)', 'PRG(ng/mL)', 'RBS(mg/dl)', 'Weight gain(Y/N)', 'hair growth(Y/N)', 'Skin darkening (Y/N)', 'Pimples(Y/N)', 'BP _Systolic (mmHg)', 'BP _Diastolic (mmHg)', 'Follicle No. (L)', 'Follicle No. (R)']
+
+# Selected features from Ensemble Filter + BEEO (RL) + BMFK (Proposed)
+proposed_selected_features = [
+        'Follicle No. (L)', 'hair growth(Y/N)', 'Follicle No. (R)',
+        'Cycle(R/I)', 'Fast food (Y/N)', 'Skin darkening (Y/N)',
+        'Cycle length(days)', 'FSH/LH', ' Age (yrs)', 'Weight (Kg)',
+        'Hip(inch)'  # Added more features identified as important
+    ]
+
+
+BMFK on Ensemble Selected Features Accuracy: 0.8113
+BMFK on RL Selected Features Accuracy: 0.8261
+BMFK on Proposed Selected Features Accuracy: 0.8559
+BMFK on All Features Accuracy: 0.8151
